@@ -1,157 +1,208 @@
-# 📊 Marketing Campaign Analytics Dashboard (Power BI)
+# 📢 Marketing Campaign Analytics — Power BI + SQL Project
 
-A complete end-to-end data analytics project analyzing **marketing campaign performance** across multiple channels (Search, Social, Email, Display).  
-The dashboard helps identify high-performing channels, optimize ad spend, and improve overall ROI.
+An end-to-end **Marketing Performance & ROI Analytics** project using **Power BI, SQL, Power Query, and DAX** to analyze campaign performance across channels, regions, and customer acquisition.
 
----
-
-## 📁 Project Structure
-
-Marketing-Campaign-Analytics-Dashboard-using-Power-BI/
-│── Dataset/
-│── Images/
-│ ├── dashboard_1.png
-│ ├── dashboard_2.png
-│ ├── dashboard_3.png
-│ ├── dashboard_4.png
-│ ├── dashboard_5.png
-│── PowerBI_Files/
-│── Project_Report/
-│── SQL/
-│── README.md
-
+This project showcases real-world digital marketing KPIs such as CTR, CPC, ROAS, Spend Efficiency, Conversion Behavior, and Retention.
 
 ---
 
-# 📸 Dashboard Preview
-
-### **📌 Dashboard 1 — Executive Summary**
-![Dashboard 1](Images/dashboard_1.png)
-
-### **📌 Dashboard 2 — Channel Performance**
-![Dashboard 2](Images/dashboard_2.png)
-
-### **📌 Dashboard 3 — Audience & Segment Insights**
-![Dashboard 3](Images/dashboard_3.png)
-
-### **📌 Dashboard 4 — Time Series Trends**
-![Dashboard 4](Images/dashboard_4.png)
-
-### **📌 Dashboard 5 — Funnel Analysis**
-![Dashboard 5](Images/dashboard_5.png)
+## 🔧 Tech Stack
+- Power BI Desktop  
+- SQL  
+- Power Query  
+- DAX  
+- Excel  
+- Data Modeling  
 
 ---
 
-# 🚀 Project Overview
+## 📁 Folder Structure
 
-This project evaluates how marketing campaigns perform across various digital channels.  
-Key business questions addressed:
-
-- Which channel delivers the highest **ROAS**?
-- Which campaigns generate the most **clicks, leads, and revenue**?
-- How do **countries** and **devices** impact performance?
-- What does the **marketing funnel** look like?
-- How does **spend vs revenue** trend over time?
-
----
-
-# 🛠 Tools & Technologies
-
-### **🔹 Power BI**
-- Data modeling  
-- DAX measures (CTR, CVR, CPA, ROAS, MTD revenue)  
-- Custom calendar table  
-- Cross-filtering  
-- Funnel visuals  
-- Heatmaps, line charts, summary cards
-
-### **🔹 SQL**
-- Data cleaning  
-- Campaign performance KPIs  
-- Channel segmentation  
-- Time-series queries  
-- Funnel metrics
-
-### **🔹 Data Cleaning (Power Query)**
-- Text normalization  
-- Null handling  
-- Numeric type correction  
-- Creating campaign keys  
-- Removing duplicates  
+```
+Marketing_Campaign_Analytics_Project/
+│
+├── Data/
+│   ├── Project4_Campaign_Performance.csv
+│   ├── Project4_Customer_Acquisition.csv
+│
+├── Images/
+│   ├── dashboard_1.png
+│   ├── dashboard_2.png
+│   ├── dashboard_3.png
+│   ├── dashboard_4.png
+│   ├── dashboard_5.png
+│
+├── Marketing_Campaign_Analytics.pbix
+├── Marketing_Campaign_Analytics.pdf
+└── README.md
+```
 
 ---
 
-# 📊 Key Insights
+## 🧩 Business Problem
 
-- Email & Organic channels deliver **highest ROI**  
-- Social Media brings high traffic but **low conversion**  
-- Desktop users convert better than mobile  
-- Certain countries contribute most revenue  
-- Major funnel drop-offs occur between *Clicks → Leads*
+Marketing teams struggle to understand:
+- Which channels drive maximum impressions, clicks, and conversions  
+- Spend wastage across campaigns  
+- Customer acquisition patterns  
+- Which campaigns produce high ROAS (Return on Ad Spend)  
+- Retention of acquired customers (30-day basis)
 
----
-
-# 📈 KPIs Included
-
-| Metric | Definition |
-|-------|------------|
-| **CTR** | Click Through Rate |
-| **CVR** | Conversion Rate |
-| **CPL** | Cost Per Lead |
-| **ROAS** | Return on Ad Spend |
-| **MTD Revenue** | Month-to-Date Revenue |
-| **Total Spend, Clicks, Leads** | Overall performance metrics |
+This dashboard solves these issues using data analytics.
 
 ---
 
-# 🧠 Data Model
+## 🎯 Project Goals
 
-- **Fact Table:** Campaign Performance  
-- **Fact Table:** Customer Acquisition  
-- **Dimension:** Date (DimDate)  
-- Relationships built using **campaign_key**
-
----
-
-# 🗄 SQL File Included
-
-The project includes a full SQL script for:
-
-- Data Cleaning  
-- KPI Calculations  
-- Channel Analysis  
-- Funnel Analysis  
-- Time Series Queries
-
-File:  
-`/SQL/project4_marketing_campaign_analytics.sql`
+- Analyze multi-channel campaign performance  
+- Track marketing KPIs such as CTR, CPC, ROAS  
+- Identify top-performing campaigns and countries  
+- Compare device-level engagement  
+- Analyze customer acquisition behavior  
+- Evaluate 30-day retention & churn  
 
 ---
 
-# 📘 Project Files
+## 📊 Dashboard Pages (5 Pages)
 
-- **Dashboard (PBIX)** → `/PowerBI_Files/`
-- **Cleaned Datasets** → `/Dataset/`
-- **PDF Report** → `/Project_Report/`
-- **Images** → `/Images/`
-- **SQL Script** → `/SQL/`
+### **📌 Page 1 — Campaign Overview**
+**Visuals:**
+- Total Impressions (Card)  
+- Total Clicks (Card)  
+- Total Spend (Card)  
+- Total Revenue (Card)  
+- CTR, CPC, ROAS (KPI Cards)  
+- Impressions by Channel (Bar Chart)  
+- Clicks by Channel (Bar Chart)  
 
----
-
-# 🎯 Outcome
-
-This project demonstrates strong skills in:
-
-- Analytical Thinking  
-- Business KPI Development  
-- Marketing Analytics  
-- Dashboard Design  
-- SQL + Power BI Integration  
-
-Perfect for **Data Analyst roles (6–7 LPA)**.
+**Preview:**  
+![Dashboard Page 1](Images/dashboard_1.png)
 
 ---
 
-# ⭐ Author: Shyam Venkat  
-If you found this helpful, feel free to ⭐ **star the repository**!
+### **📌 Page 2 — Spend & Revenue Analysis**
+**Visuals:**
+- Spend Trend (Line Chart)  
+- Revenue Trend (Line Chart)  
+- Spend vs Revenue by Channel (Clustered Column Chart)  
+- ROAS by Campaign (Bar Chart)  
 
+**Preview:**  
+![Dashboard Page 2](Images/dashboard_2.png)
+
+---
+
+### **📌 Page 3 — Customer Acquisition**
+**Visuals:**
+- Total Customers Acquired  
+- Avg First Order Value  
+- Acquisition by Channel  
+- Acquisition by Country  
+- Acquisition Trend by Date  
+
+**Preview:**  
+![Dashboard Page 3](Images/dashboard_3.png)
+
+---
+
+### **📌 Page 4 — Retention & Churn**
+**Visuals:**
+- Retention Rate (Card)  
+- Churn Rate (Card)  
+- Retained Customers by Channel  
+- Retained vs Churned (Donut)  
+- 30-Day Retention Trend (Line Chart)
+
+**Preview:**  
+![Dashboard Page 4](Images/dashboard_4.png)
+
+---
+
+### **📌 Page 5 — Campaign Deep Dive**
+**Visuals:**
+- Campaign Selector (Slicer)  
+- Campaign CTR Trend  
+- Campaign CPC Trend  
+- Campaign ROAS Trend  
+- Device Performance  
+
+**Preview:**  
+![Dashboard Page 5](Images/dashboard_5.png)
+
+---
+
+## 🛠️ SQL Queries Used
+
+### **1. Basic Cleaning**
+```sql
+SELECT 
+    campaign_id,
+    channel,
+    impressions,
+    clicks,
+    spend,
+    revenue
+FROM campaign_performance;
+```
+
+### **2. Click-Through Rate**
+```sql
+SELECT 
+    campaign_id,
+    (clicks * 1.0 / impressions) AS ctr
+FROM campaign_performance;
+```
+
+### **3. Cost Per Click**
+```sql
+SELECT 
+    campaign_id,
+    CASE 
+        WHEN clicks = 0 THEN NULL 
+        ELSE spend / clicks 
+    END AS cpc
+FROM campaign_performance;
+```
+
+### **4. Return on Ad Spend**
+```sql
+SELECT 
+    campaign_id,
+    revenue / spend AS roas
+FROM campaign_performance
+WHERE spend > 0;
+```
+
+### **5. Customer Retention**
+```sql
+SELECT 
+    channel,
+    COUNT(*) AS total_customers,
+    SUM(is_retained_30d) AS retained_customers,
+    SUM(is_retained_30d) * 1.0 / COUNT(*) AS retention_rate
+FROM customer_acquisition
+GROUP BY channel;
+```
+
+---
+
+## 📈 Key Insights
+
+- Google & Facebook deliver the highest impressions and clicks  
+- LinkedIn has the highest CPC but strong enterprise ROAS  
+- Email channel shows low spend but best ROI  
+- Retention highest on Desktop users  
+- Campaigns with lower spend sometimes yield better ROAS  
+
+---
+
+## 👤 Author  
+**G. Shyam Venkat**  
+_Data Analyst | SQL | Power BI | DAX | Excel_
+
+🔗 GitHub: https://github.com/shyamcodes-ai  
+🔗 LinkedIn: https://linkedin.com/in/g-shyam-venkat-304ab536b  
+
+---
+
+⭐ If you found this project helpful, consider giving the repository a star!
